@@ -62,7 +62,7 @@
 var configProfile = {
   "profile": {"screenName": 'MCFoundationFRP'},
   "domId": 'Twitter-widget',
-  "maxTweets": 2,
+  "maxTweets": 1,
   "enableLinks": true, 
   "showUser": true,
   "showTime": true,
@@ -70,31 +70,3 @@ var configProfile = {
   "lang": 'en'
 };
 twitterFetcher.fetch(configProfile);
-
-
-var configLikes = {
-  "likes": {"screenName": 'btetweets'},
-  "domId": 'example2',
-  "maxTweets": 3,
-  "enableLinks": true, 
-  "showUser": true,
-  "showTime": true,
-  "showImages": true,
-  "lang": 'en'
-};
-twitterFetcher.fetch(configLikes);
-
-
-var configList = {
-  "list": {"listSlug": 'inspiration', "screenName": 'btetweets'},
-  "domId": 'example3',
-  "maxTweets": 3,
-  "enableLinks": true, 
-  "showUser": true,
-  "showTime": true,
-  "showImages": true,
-  "lang": 'en'
-};
-twitterFetcher.fetch(configList);
-
-;

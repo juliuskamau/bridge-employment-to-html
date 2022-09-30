@@ -60,6 +60,7 @@ html {
    @extend .Oscine-Regular;
     color: #6D6D6D;
     font-size: 18PX;
+    overflow-x: hidden;
 }
 .fullwidth {
     width: 100%;
@@ -618,7 +619,7 @@ font-size: 18px;
 .button:before {
   content: '';
   position: absolute;
-  border:solid 1px #234088;
+  border:solid 1px #ED1F31;
   top: -14px;
   right: -14px;
   bottom: -14px;
@@ -644,7 +645,26 @@ section.banner{
     background-image: url(../images/BG-texture-gray.png);
     background-position: center center;
    background-repeat: repeat-x;
+   padding-top:2rem;
+.owl-dots{
+    position: absolute;
+    bottom: 17%;
+}
+.owl-theme .owl-dots .owl-dot span{
+    width: 20px;
+    height: 20px;
+    background: #ED1F31;
+}
 
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+    background: #003276;
+}
+.owl-theme .owl-dots .owl-dot{
+    margin-left: 6px;
+    margin-right: 6px;
+}
 .table{
 .table-cell{
 h1{
@@ -659,6 +679,10 @@ h1{
 }
 .jarallax {
  min-height: 560px;
+ .jarallax-img{
+   // object-fit: contain !important;
+   // font-family: 'object-fit: contain;' !important;
+ }
 }
 }
 
@@ -668,8 +692,27 @@ Section what we do
 
 
 section.what-we-do{
-background: url(../images/texture.png);
-background-repeat: round;
+/*background: url(../images/texture.png);
+background-repeat: round;*/
+   padding-top: 5rem;
+    background: #003276;
+    position: relative;
+    
+    &::before{
+    background: url(../images/texturehome.png);
+   /* content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;*/
+    content: '';
+    display: block;
+    height: 316px;
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    }
 .table{
    padding-top: 5rem;
 .table-cell{
@@ -699,8 +742,11 @@ Section news
 ===============*/ 
 
 .news{
+    padding-top: 4rem;
+
    .jarallax{
 min-height: 480px;
+
    } 
    .table{
    
@@ -731,22 +777,19 @@ section.news-child-item{
     background-repeat: repeat-x;
     position: relative;
     &::before{
-/* background: url(../images/news-child.png);
+background: url(../images/news-child.png);
  content: '';
   display: block;
   height: 100%;
   position: absolute;
   width: 100%;
-  background-repeat: no-repeat;*/
-background: url(../images/news-child.png);
-    content: '';
+  background-repeat: no-repeat;
+    /*content: '';
     display: block;
-    height: 100%;
-    z-index: -9;
-    top: -120px;
+    height: 212px;
+    top: 0px;
     position: absolute;
-    width: 100%;
-    background-repeat: no-repeat;
+    width: 100%;*/
     }
     &::after{
 background: url(../images/news-child-bottom.png);
@@ -767,7 +810,7 @@ font-size: 24px;
 @extend .Oscine-Regular;
     }
     .news-item{
-padding-top: 5rem;
+    padding-top: 10rem;
     }
     a.button{
         background: #ED1F31;
@@ -822,6 +865,7 @@ section.student{
     padding-top: 5rem;
     padding-bottom: 5rem;
     .panel-intro{
+        margin-bottom: 5rem;
    h1{
 font-size: 29px;
     }
@@ -881,10 +925,11 @@ section.get-in-touch{
 background: url(../images/getingtouchgtexture.png);
     content: '';
     display: block;
-    height: 130px;
+    height: 212px;
     bottom: 0px;
     position: absolute;
     width: 100%;
+
     }
     .publication{
         .pdf-panel{
@@ -998,10 +1043,80 @@ arallax css
 Footer
 ===============*/  
 footer{
+    padding-top: 5rem;
+    .copyright{
+a{
+ @extend .Oscine-Bold;
+    @extend .color-blue;
+    border-right: solid 2px #28377d;
+    padding-right:10px;
+     margin-right:10px;
+}
+
+li{
+&:last-child{
+     a{
+        border-right: none;
+     }
+}
+}
+
+    }
+    .logo img{
+max-width: 100%;
+width: 150px;
+height: auto;
+    }
+    #Twitter-widget{
+ul{
+    li{
+        list-style: none;
+.user{
+    background: url(../images/twitter.png);
+   background-position: right; 
+   background-repeat: no-repeat;
+    [data-scribe="component:author"]{
+
+    }
+[data-scribe="element:user_link"]{
+    @extend .Oscine-Bold;
+    @extend .color-blue;
+    
+}
+    }
+ .tweet{
+      @extend .Oscine-Regular;
+    color: #818181;
+    @extend .margin-0;
+    a{
+@extend .color-red;
+@extend .margin-0;
+    }
+}  
+ .timePosted{
+     @extend .margin-0;
+    a{
+@extend .color-blue;
+ @extend .Oscine-Bold;
+@extend .margin-0;
+    }
+ }
+  .interact{
+     @extend .margin-0;
+    a{
+@extend .color-red;
+ @extend .Oscine-Bold;
+@extend .margin-right-10;
+    }
+ }
+}
+    }
+    }
 h1{
 font-size: 24px;
 }
 .social-media{
+    
 li{
     a{
 .fa{
@@ -1013,6 +1128,11 @@ li{
     font-size: 25px;
 @extend .background-blue;
 @extend .color-white;
+&:hover{
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+  @extend .background-red;
+}
 }
     }
 }

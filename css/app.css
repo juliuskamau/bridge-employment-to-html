@@ -21,13 +21,13 @@ FONTS CSS STYLING
 .FreightText-Pro-Medium, section.banner .table .table-cell h1 {
   font-family: "FreightText-Pro-Medium"; }
 
-.Oscine-Bold, header .panel_login a, header .navbar-light .navbar-nav .nav-link, section.what-we-do .table .table-cell .button, section.news-child-item a.button, section.news-child-item .publication .table .table-cell a.button, section.student .panel-intro a.button, section.get-in-touch .publication .table .table-cell a.button, section.get-in-touch .publication .table .table-cell .row .col-md-6:last-child a.button {
+.Oscine-Bold, header .panel_login a, header .navbar-light .navbar-nav .nav-link, section.what-we-do .table .table-cell .button, section.news-child-item a.button, section.news-child-item .publication .table .table-cell a.button, section.student .panel-intro a.button, section.get-in-touch .publication .table .table-cell a.button, section.get-in-touch .publication .table .table-cell .row .col-md-6:last-child a.button, footer .copyright a, footer #Twitter-widget ul li .user [data-scribe="element:user_link"], footer #Twitter-widget ul li .timePosted a, footer #Twitter-widget ul li .interact a {
   font-family: oscine,sans-serif;
   font-weight: 700;
   font-style: normal; }
 
 .Oscine-Regular, body,
-html, .button, section.news-child-item a {
+html, .button, section.news-child-item a, footer #Twitter-widget ul li .tweet {
   font-family: oscine, sans-serif;
   font-weight: 400;
   font-style: normal; }
@@ -48,7 +48,8 @@ COMMON CSS STYLING
 body,
 html {
   color: #6D6D6D;
-  font-size: 18PX; }
+  font-size: 18PX;
+  overflow-x: hidden; }
 
 .fullwidth {
   width: 100%; }
@@ -185,7 +186,7 @@ a {
 .background-blue, footer .social-media li a .fa {
   background: #003276; }
 
-.background-red {
+.background-red, footer .social-media li a .fa:hover {
   background: #E85A50; }
 
 .color-white, section.what-we-do .table .table-cell .button, footer .social-media li a .fa {
@@ -194,10 +195,10 @@ a {
 .color-black, section.banner .table .table-cell h1 {
   color: #1a1a1a; }
 
-.color-blue {
+.color-blue, footer .copyright a, footer #Twitter-widget ul li .user [data-scribe="element:user_link"], footer #Twitter-widget ul li .timePosted a {
   color: #28377d; }
 
-.color-red, .button {
+.color-red, .button, footer #Twitter-widget ul li .tweet a, footer #Twitter-widget ul li .interact a {
   color: #ED1F31; }
 
 .panel {
@@ -290,7 +291,7 @@ COMMON PADDING AND MARGING CSS CLASSES
 .padding-right-30 {
   padding-right: 30px; }
 
-.margin-0 {
+.margin-0, footer #Twitter-widget ul li .tweet, footer #Twitter-widget ul li .tweet a, footer #Twitter-widget ul li .timePosted, footer #Twitter-widget ul li .timePosted a, footer #Twitter-widget ul li .interact {
   margin: 0; }
 
 .margin-bottom-0 {
@@ -308,7 +309,7 @@ COMMON PADDING AND MARGING CSS CLASSES
 .margin-bottom-10 {
   margin-bottom: 10px; }
 
-.margin-right-10 {
+.margin-right-10, footer #Twitter-widget ul li .interact a {
   margin-right: 10px; }
 
 .margin-lefgt-10 {
@@ -474,7 +475,7 @@ header .navbar-light .navbar-nav .nav-link {
 .button:before {
   content: '';
   position: absolute;
-  border: solid 1px #234088;
+  border: solid 1px #ED1F31;
   top: -14px;
   right: -14px;
   bottom: -14px;
@@ -495,7 +496,21 @@ Section Banner
 section.banner {
   background-image: url(../images/BG-texture-gray.png);
   background-position: center center;
-  background-repeat: repeat-x; }
+  background-repeat: repeat-x;
+  padding-top: 2rem; }
+  section.banner .owl-dots {
+    position: absolute;
+    bottom: 17%; }
+  section.banner .owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+    background: #ED1F31; }
+  section.banner .owl-theme .owl-dots .owl-dot.active span,
+  section.banner .owl-theme .owl-dots .owl-dot:hover span {
+    background: #003276; }
+  section.banner .owl-theme .owl-dots .owl-dot {
+    margin-left: 6px;
+    margin-right: 6px; }
   section.banner .jarallax {
     min-height: 560px; }
 
@@ -503,8 +518,25 @@ section.banner {
 Section what we do
 ===============*/
 section.what-we-do {
-  background: url(../images/texture.png);
-  background-repeat: round; }
+  /*background: url(../images/texture.png);
+  background-repeat: round;*/
+  padding-top: 5rem;
+  background: #003276;
+  position: relative; }
+  section.what-we-do::before {
+    background: url(../images/texturehome.png);
+    /* content: '';
+     display: block;
+     height: 100%;
+     position: absolute;
+     width: 100%;
+     background-repeat: no-repeat;*/
+    content: '';
+    display: block;
+    height: 316px;
+    top: 0px;
+    position: absolute;
+    width: 100%; }
   section.what-we-do .table {
     padding-top: 5rem; }
     section.what-we-do .table .table-cell {
@@ -523,16 +555,18 @@ section.what-we-do {
 /*=================
 Section news
 ===============*/
-.news .jarallax {
-  min-height: 480px; }
-.news .table .table-cell {
-  text-align: left; }
-  .news .table .table-cell h2 {
-    width: 58%;
-    line-height: normal;
-    font-size: 40px; }
-  .news .table .table-cell h1 {
-    font-size: 18px; }
+.news {
+  padding-top: 4rem; }
+  .news .jarallax {
+    min-height: 480px; }
+  .news .table .table-cell {
+    text-align: left; }
+    .news .table .table-cell h2 {
+      width: 58%;
+      line-height: normal;
+      font-size: 40px; }
+    .news .table .table-cell h1 {
+      font-size: 18px; }
 
 /*=================
 Section news child item
@@ -543,22 +577,19 @@ section.news-child-item {
   background-repeat: repeat-x;
   position: relative; }
   section.news-child-item::before {
-    /* background: url(../images/news-child.png);
-     content: '';
-      display: block;
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      background-repeat: no-repeat;*/
     background: url(../images/news-child.png);
     content: '';
     display: block;
     height: 100%;
-    z-index: -9;
-    top: -120px;
     position: absolute;
     width: 100%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    /*content: '';
+    display: block;
+    height: 212px;
+    top: 0px;
+    position: absolute;
+    width: 100%;*/ }
   section.news-child-item::after {
     background: url(../images/news-child-bottom.png);
     content: '';
@@ -574,7 +605,7 @@ section.news-child-item {
     color: #3C3C3C;
     color: #3C3C3C; }
   section.news-child-item .news-item {
-    padding-top: 5rem; }
+    padding-top: 10rem; }
   section.news-child-item a.button {
     background: #ED1F31;
     color: #fff;
@@ -607,13 +638,15 @@ Section student
 section.student {
   padding-top: 5rem;
   padding-bottom: 5rem; }
-  section.student .panel-intro h1 {
-    font-size: 29px; }
-  section.student .panel-intro a.button {
-    background: #ED1F31;
-    color: #fff;
-    margin-top: 1rem;
-    font-size: 18px; }
+  section.student .panel-intro {
+    margin-bottom: 5rem; }
+    section.student .panel-intro h1 {
+      font-size: 29px; }
+    section.student .panel-intro a.button {
+      background: #ED1F31;
+      color: #fff;
+      margin-top: 1rem;
+      font-size: 18px; }
   section.student h1 {
     font-size: 18px; }
   section.student p {
@@ -649,7 +682,7 @@ section.get-in-touch {
     background: url(../images/getingtouchgtexture.png);
     content: '';
     display: block;
-    height: 130px;
+    height: 212px;
     bottom: 0px;
     position: absolute;
     width: 100%; }
@@ -725,14 +758,37 @@ arallax css
 /*=================
 Footer
 ===============*/
-footer h1 {
-  font-size: 24px; }
-footer .social-media li a .fa {
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 25px; }
+footer {
+  padding-top: 5rem; }
+  footer .copyright a {
+    border-right: solid 2px #28377d;
+    padding-right: 10px;
+    margin-right: 10px; }
+  footer .copyright li:last-child a {
+    border-right: none; }
+  footer .logo img {
+    max-width: 100%;
+    width: 150px;
+    height: auto; }
+  footer #Twitter-widget ul li {
+    list-style: none; }
+    footer #Twitter-widget ul li .user {
+      background: url(../images/twitter.png);
+      background-position: right;
+      background-repeat: no-repeat; }
+    footer #Twitter-widget ul li .tweet {
+      color: #818181; }
+  footer h1 {
+    font-size: 24px; }
+  footer .social-media li a .fa {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px; }
+    footer .social-media li a .fa:hover {
+      -webkit-animation-name: bounceInUp;
+      animation-name: bounceInUp; }
 
 /*# sourceMappingURL=app.css.map */
