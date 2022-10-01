@@ -174,7 +174,11 @@ display: none;
     object-fit: cover;
 }
 .ih-item.square.effect4 {margin-top: 0rem;}
-
+section.what-we-do::before {
+    height: 147px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 }
 
 /* X-Small devices (portrait phones, less than 576px)=======================*/

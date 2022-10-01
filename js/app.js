@@ -3,7 +3,7 @@ AOS.init({
 })
 
   $(document).ready(function(){
-    $('.banner .owl-carousel').owlCarousel(
+    $('.banner .owl-carousel,.banner-inner .owl-carousel').owlCarousel(
         {
             loop:true,
             margin:0,

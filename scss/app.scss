@@ -230,7 +230,7 @@ a {
 
 
 .background-white {
-    background: #fff;
+    background: #fff !important;
 }
 
 .background-black {
@@ -637,10 +637,101 @@ font-size: 18px;
  
 }
 
+/*=================
+Section Banner inner
+===============*/ 
+.banner-inner.container.full-width{
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 2rem;
+    overflow: hidden;
+    img{
+animation: scale 40s linear infinite;
+width: 100%;
+
+    }
+}
+
+.zoom {
+    animation: scale 40s linear infinite
+}
+
+@keyframes scale {
+    50% {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2)
+    }
+}
+
+/*=================
+panel quick-links
+===============*/ 
+.panel.quick-links{
+    background-color: #fff;
+    border-top: 4px solid #003276;
+    right: 0px;
+    width: 370px;
+a{
+  @extend .color-black;
+  @extend .Oscine-Bold;  
+color: #003276;
+    border-bottom: #d0d0d0 solid 1px;
+    padding-top: 0.7rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.7rem;
+    display: block;
+    clear: both;
+}
+}
+
+
+
+/*=================
+Section body-Text
+===============*/ 
+
+.body-Text.background-green{
+padding-top: 5rem;
+padding-bottom: 5rem;
+h1{
+    color: #002351;
+    text-transform: capitalize;
+    font-size: 33px;
+    margin-bottom: 2rem;
+    @extend .Oscine-Bold; 
+}
+p{
+ @extend .Oscine-Regular; 
+ color: #141414;
+     font-size: 22px;
+}
+ul{
+    margin-left: 4rem;
+    li{
+        margin-bottom: 1rem;
+ @extend .Oscine-Regular; 
+ color: #141414;
+     font-size: 22px;
+    }
+}
+
+}
+
+
+
+
+
+
+
 
 /*=================
 Section Banner
 ===============*/ 
+
 section.banner{
     background-image: url(../images/BG-texture-gray.png);
     background-position: center center;

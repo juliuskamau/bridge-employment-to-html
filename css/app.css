@@ -21,13 +21,13 @@ FONTS CSS STYLING
 .FreightText-Pro-Medium, section.banner .table .table-cell h1 {
   font-family: "FreightText-Pro-Medium"; }
 
-.Oscine-Bold, header .panel_login a, header .navbar-light .navbar-nav .nav-link, section.what-we-do .table .table-cell .button, section.news-child-item a.button, section.news-child-item .publication .table .table-cell a.button, section.student .panel-intro a.button, section.get-in-touch .publication .table .table-cell a.button, section.get-in-touch .publication .table .table-cell .row .col-md-6:last-child a.button, footer .copyright a, footer #Twitter-widget ul li .user [data-scribe="element:user_link"], footer #Twitter-widget ul li .timePosted a, footer #Twitter-widget ul li .interact a {
+.Oscine-Bold, header .panel_login a, header .navbar-light .navbar-nav .nav-link, .panel.quick-links a, .body-Text.background-green h1, section.what-we-do .table .table-cell .button, section.news-child-item a.button, section.news-child-item .publication .table .table-cell a.button, section.student .panel-intro a.button, section.get-in-touch .publication .table .table-cell a.button, section.get-in-touch .publication .table .table-cell .row .col-md-6:last-child a.button, footer .copyright a, footer #Twitter-widget ul li .user [data-scribe="element:user_link"], footer #Twitter-widget ul li .timePosted a, footer #Twitter-widget ul li .interact a {
   font-family: oscine,sans-serif;
   font-weight: 700;
   font-style: normal; }
 
 .Oscine-Regular, body,
-html, .button, section.news-child-item a, footer #Twitter-widget ul li .tweet {
+html, .button, .body-Text.background-green p, .body-Text.background-green ul li, section.news-child-item a, footer #Twitter-widget ul li .tweet {
   font-family: oscine, sans-serif;
   font-weight: 400;
   font-style: normal; }
@@ -175,7 +175,7 @@ a {
     color: #C8C8C8; }
 
 .background-white {
-  background: #fff; }
+  background: #fff !important; }
 
 .background-black {
   background: #e85b51; }
@@ -192,7 +192,7 @@ a {
 .color-white, section.what-we-do .table .table-cell .button, footer .social-media li a .fa {
   color: #fff; }
 
-.color-black, section.banner .table .table-cell h1 {
+.color-black, .panel.quick-links a, section.banner .table .table-cell h1 {
   color: #1a1a1a; }
 
 .color-blue, footer .copyright a, footer #Twitter-widget ul li .user [data-scribe="element:user_link"], footer #Twitter-widget ul li .timePosted a {
@@ -489,6 +489,67 @@ header .navbar-light .navbar-nav .nav-link {
 .button:active:before {
   -webkit-animation-name: button;
   animation-name: button; }
+
+/*=================
+Section Banner inner
+===============*/
+.banner-inner.container.full-width {
+  max-width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 2rem;
+  overflow: hidden; }
+  .banner-inner.container.full-width img {
+    animation: scale 40s linear infinite;
+    width: 100%; }
+
+.zoom {
+  animation: scale 40s linear infinite; }
+
+@keyframes scale {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+/*=================
+panel quick-links
+===============*/
+.panel.quick-links {
+  background-color: #fff;
+  border-top: 4px solid #003276;
+  right: 0px;
+  width: 370px; }
+  .panel.quick-links a {
+    color: #003276;
+    border-bottom: #d0d0d0 solid 1px;
+    padding-top: 0.7rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.7rem;
+    display: block;
+    clear: both; }
+
+/*=================
+Section body-Text
+===============*/
+.body-Text.background-green {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  .body-Text.background-green h1 {
+    color: #002351;
+    text-transform: capitalize;
+    font-size: 33px;
+    margin-bottom: 2rem; }
+  .body-Text.background-green p {
+    color: #141414;
+    font-size: 22px; }
+  .body-Text.background-green ul {
+    margin-left: 4rem; }
+    .body-Text.background-green ul li {
+      margin-bottom: 1rem;
+      color: #141414;
+      font-size: 22px; }
 
 /*=================
 Section Banner
