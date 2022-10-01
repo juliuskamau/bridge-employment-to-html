@@ -252,7 +252,7 @@ a {
 
 
 .color-white {
-    color: #fff;
+    color: #fff !important;
 }
 
 .color-black {
@@ -264,7 +264,7 @@ a {
     color:#28377d;
 }
 .color-red{
-    color:#ED1F31;
+    color:#E30023;
 }
 
 
@@ -611,15 +611,17 @@ font-size: 18px;
   position: relative;
   padding:0.75rem 2rem; 
   font-size: 18px;
-  border:solid 1px #ED1F31;
+  border:solid 1px #E30023;
   @extend .color-red;
   @extend .Oscine-Regular;
-
+  .fa{
+margin-left: 1rem;
+  }
 }
 .button:before {
   content: '';
   position: absolute;
-  border:solid 1px #ED1F31;
+  border:solid 1px #E30023;
   top: -14px;
   right: -14px;
   bottom: -14px;
@@ -637,10 +639,136 @@ font-size: 18px;
  
 }
 
+/*===============================
+Section Breadcrump and page title
+===============================*/ 
+.breadcrumb{
+    .breadcrumb-item{
+a{
+   
+    @extend .Oscine-Bold; 
+color: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+    }
+.breadcrumb-item.active {
+     @extend .Oscine-Bold; 
+    font-size: 19px;
+    text-transform: uppercase;
+}
+}
+.page-title-inner{
+  @extend .color-white;
+}
+
+.breadcrumb.blue{
+    .breadcrumb-item{
+a{
+   
+    @extend .Oscine-Bold; 
+@extend .color-blue; 
+    font-size: 19px;
+    text-transform: uppercase;
+}
+    }
+.breadcrumb-item.active {
+     @extend .Oscine-Bold; 
+    font-size: 19px;
+    text-transform: uppercase;
+}
+}
+.page-title-inner{
+  @extend .color-white;
+}
+
+/*==========================
+Section Banner effect
+==========================*/ 
+
+.st0, .st1, .st2{
+	stroke-dashoffset:0%;
+	stroke-dasharray: 140%;
+}
+.st0{
+	stroke-dashoffset:0%;
+	stroke-dasharray: 140%;
+	animation: dash 3.9s 2.1s forwards;
+	animation-iteration-count: infinite;
+}
+.st1{
+	stroke-dashoffset:0%;
+	stroke-dasharray: 140%;
+	animation: dash 4.9s 1.1s forwards;
+	animation-iteration-count: infinite;
+    
+}
+.st2{
+   
+	stroke-dashoffset:0%;
+	stroke-dasharray: 140%;
+	animation: dash 5.9s 0.5s forwards;
+	animation-iteration-count: infinite;
+    margin-top: -30px;
+}
+.bg{
+ /* position: absolute;
+  display: block;
+  min-width: 100%;
+  min-height: 105%;
+  margin-top: -30px;
+  margin-left: -130px;
+  z-index: 5;
+  pointer-events: none;*/
+    position: absolute;
+    z-index: 9999;
+    bottom: 0px;
+    pointer-events: none;
+   
+
+}
+@keyframes dash{
+	0%{
+		stroke-dashoffset:140%;
+	}
+	100%{
+		stroke-dashoffset:0%;
+	}
+	
+}
+
+
+
+
+
+/*==========================
+Section Banner inner white
+==========================*/ 
+.banner-inner-white{
+    background-image: url(../images/explore.png);
+  // background-position: 514% 33%;
+   background-repeat: repeat-x;
+   padding-top:2rem;
+    overflow: hidden;
+    position: relative;
+.page-title-inner{
+color: #000 !important;
+}
+figure{
+    margin: 0px;
+}
+}
+
+
+
+
 /*=================
 Section Banner inner
 ===============*/ 
 .banner-inner.container.full-width{
+    .absolute{
+        bottom: 30%;
+    }
     max-width: 100%;
     padding-left: 0px;
     padding-right: 0px;
@@ -675,16 +803,53 @@ panel quick-links
     border-top: 4px solid #003276;
     right: 0px;
     width: 370px;
+
 a{
   @extend .color-black;
   @extend .Oscine-Bold;  
-color: #003276;
+   color: #003276;
     border-bottom: #d0d0d0 solid 1px;
-    padding-top: 0.7rem;
-    padding-bottom: 1.5rem;
-    margin-bottom: 0.7rem;
+    padding-top: 0.9rem;
+    padding-bottom:0.9rem;
+   // margin-bottom: 0.7rem;
     display: block;
     clear: both;
+padding-left: 15px;
+position: relative;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    cursor: pointer;
+   
+&::before{
+top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    color: #fff;
+    background-color: #003276;
+    -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+    position: absolute;
+    content: "";
+    z-index: -9;
+    
+}
+&::after{
+    position: absolute;
+    content: "";
+}
+
+&:hover{
+    color: #fff;
+&::before{
+        width: 100%;
+}
+}
+
+
+
 }
 }
 
@@ -694,9 +859,85 @@ color: #003276;
 Section body-Text
 ===============*/ 
 
+.video-modal{
+.modal-dialog{
+max-width: 900px;
+.modal-content{
+background-color: transparent;
+border: none;
+.modal-header{
+border: none;
+.btn-close{
+    border-radius: 50%;
+    border: solid 3px #002351;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    opacity: initial;
+   // color: #002351;
+    &:hover{
+            border: solid 3px #fff;
+    background: #002351;
+   // color: #fff;
+    -webkit-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+      -webkit-transform: rotateZ(720deg);
+      -moz-transform: rotateZ(720deg);
+      transform: rotateZ(720deg);
+        .fa{
+ color: #fff;
+    }
+    }
+       .fa{
+        color: #002351;
+        font-size: 24px;
+    }
+}
+}
+}
+}
+}
+
+/*=================
+Section body-Text
+===============*/ 
+
 .body-Text.background-green{
 padding-top: 5rem;
 padding-bottom: 5rem;
+span.play{
+    top: 43%;
+    bottom: 50%;
+    left: 43%;
+    right: 50%;
+    border-radius: 50%;
+    border: solid 3px #002351;
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+    &:hover{
+    border: solid 3px #fff;
+    background: #002351;
+    -webkit-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+      -webkit-transform: rotateZ(720deg);
+      -moz-transform: rotateZ(720deg);
+      transform: rotateZ(720deg);
+    .fa{
+ color: #fff;
+    }
+    }
+    .fa{
+        color: #002351;
+        font-size: 24px;
+    }
+}
 h1{
     color: #002351;
     text-transform: capitalize;
@@ -744,7 +985,7 @@ section.banner{
 .owl-theme .owl-dots .owl-dot span{
     width: 20px;
     height: 20px;
-    background: #ED1F31;
+    background: #E30023;
 }
 
 
@@ -818,7 +1059,7 @@ p{
     line-height: 33px;
 }
 .button{
-background: #ED1F31;
+background: #E30023;
 @extend .color-white;
 @extend .Oscine-Bold;
 font-weight: 700px;
@@ -904,7 +1145,7 @@ font-size: 24px;
     padding-top: 10rem;
     }
     a.button{
-        background: #ED1F31;
+        background: #E30023;
         color: #fff;
         margin-top: 5rem;
         font-size: 18px;
@@ -934,7 +1175,7 @@ min-height: 787px;
 font-size: 18px;
  }
      a.button{
-        background: #ED1F31;
+        background: #E30023;
         color: #fff;
         margin-top: 1rem;
         font-size: 18px;
@@ -961,7 +1202,7 @@ section.student{
 font-size: 29px;
     }
      a.button{
-        background: #ED1F31;
+        background: #E30023;
         color: #fff;
         margin-top: 1rem;
         font-size: 18px;
@@ -1046,7 +1287,7 @@ min-height: 787px;
 font-size: 28px;
  }
      a.button{
-        background: #ED1F31;
+        background: #E30023;
         color: #fff;
         margin-top: 1rem;
         font-size: 18px;
@@ -1057,7 +1298,7 @@ font-size: 28px;
 &:last-child{
       a.button{
         background: #fff;
-        color: #ED1F31;
+        color: #E30023;
         margin-top: 1rem;
         font-size: 18px;
         @extend .Oscine-Bold;
@@ -1076,6 +1317,7 @@ font-size: 28px;
 .hover14 {
   figure{
   position: relative;
+  overflow: hidden;
   &::before{
   position: absolute;
   top: 0;
