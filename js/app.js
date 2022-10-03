@@ -32,6 +32,43 @@ AOS.init({
             }
         }
     );
+
+
+    $('.program-management .owl-carousel').owlCarousel(
+        {
+            loop:true,
+            margin:10,
+            nav:true,
+            dots:false,
+            autoplay: true,
+            animateOut: 'slideOutUp',
+           // animateIn: 'slideInUp',
+           autoplayHoverPause:true,
+           mouseDrag:true,
+           autoplayTimeout:8000,
+            responsive:{
+                0:{
+                    items:2,
+                    nav:true,
+                    dots:false,
+                },
+                600:{
+                    items:2,
+                    nav:true,
+                    dots:false,
+                },
+                1000:{
+                    items:3
+                }
+            }
+        }
+    );
+
+
+
+
+
+
   });
 
      jQuery(document).ready(function($) {

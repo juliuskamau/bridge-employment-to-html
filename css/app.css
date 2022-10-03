@@ -21,13 +21,13 @@ FONTS CSS STYLING
 .FreightText-Pro-Medium, section.banner .table .table-cell h1 {
   font-family: "FreightText-Pro-Medium"; }
 
-.Oscine-Bold, header .panel_login a, header .navbar-light .navbar-nav .nav-link, .breadcrumb .breadcrumb-item a, .breadcrumb .breadcrumb-item.active, .breadcrumb.blue .breadcrumb-item a, .breadcrumb.blue .breadcrumb-item.active, .panel.quick-links a, .body-Text.background-green h1, section.what-we-do .table .table-cell .button, section.news-child-item a.button, section.news-child-item .publication .table .table-cell a.button, section.student .panel-intro a.button, section.get-in-touch .publication .table .table-cell a.button, section.get-in-touch .publication .table .table-cell .row .col-md-6:last-child a.button, footer .copyright a, footer #Twitter-widget ul li .user [data-scribe="element:user_link"], footer #Twitter-widget ul li .timePosted a, footer #Twitter-widget ul li .interact a {
+.Oscine-Bold, header .panel_login a, header .navbar-light .navbar-nav .nav-link, .breadcrumb .breadcrumb-item a, .breadcrumb .breadcrumb-item.active, .breadcrumb.blue .breadcrumb-item a, .breadcrumb.blue .breadcrumb-item.active, .panel.quick-links a, .pagination .page-link, .body-Text.background-green h1, .body-Text.background-green .child-item-blog .sub-title, .body-Text.background-green .child-item-blog .title, .body-Text.background-green .child-item-blog .author span, .body-Text.background-green .child-item-blog .date, section.what-we-do .table .table-cell .button, section.news-child-item a.button, section.news-child-item .publication .table .table-cell a.button, section.student .panel-intro a.button, section.get-in-touch .publication .table .table-cell a.button, section.get-in-touch .publication .table .table-cell .row .col-md-6:last-child a.button, footer .copyright a, footer #Twitter-widget ul li .user [data-scribe="element:user_link"], footer #Twitter-widget ul li .timePosted a, footer #Twitter-widget ul li .interact a {
   font-family: oscine,sans-serif;
   font-weight: 700;
   font-style: normal; }
 
 .Oscine-Regular, body,
-html, .button, .body-Text.background-green p, .body-Text.background-green ul li, section.news-child-item a, footer #Twitter-widget ul li .tweet {
+html, .button, .body-Text.background-green p, .body-Text.background-green ul li, .body-Text.background-green .child-item-blog .author, section.news-child-item a, footer #Twitter-widget ul li .tweet {
   font-family: oscine, sans-serif;
   font-weight: 400;
   font-style: normal; }
@@ -111,7 +111,7 @@ hr {
   float: right; }
 
 .center {
-  margin: auto;
+  margin: 0 auto;
   background-position: center;
   text-align: center;
   float: none; }
@@ -133,6 +133,9 @@ hr {
 
 .display-block {
   display: block; }
+
+.display-flex {
+  display: flex; }
 
 ul {
   padding-left: 0px; }
@@ -183,23 +186,26 @@ a {
 .background-green {
   background: #e4f3f5; }
 
-.background-blue, footer .social-media li a .fa {
+.background-blue, .body-Text.background-green .child-item-blog:hover, footer .social-media li a .fa {
   background: #003276; }
 
 .background-red, footer .social-media li a .fa:hover {
   background: #E85A50; }
 
-.color-white, .page-title-inner, section.what-we-do .table .table-cell .button, footer .social-media li a .fa {
+.color-white, .page-title-inner, .body-Text.background-green .child-item-blog:hover .sub-title, .body-Text.background-green .child-item-blog:hover .title, .body-Text.background-green .child-item-blog:hover .author, .body-Text.background-green .child-item-blog:hover span, .body-Text.background-green .child-item-blog:hover p, section.what-we-do .table .table-cell .button, footer .social-media li a .fa {
   color: #fff !important; }
 
 .color-black, .panel.quick-links a, section.banner .table .table-cell h1 {
   color: #1a1a1a; }
 
-.color-blue, .breadcrumb.blue .breadcrumb-item a, footer .copyright a, footer #Twitter-widget ul li .user [data-scribe="element:user_link"], footer #Twitter-widget ul li .timePosted a {
+.color-blue, .breadcrumb.blue .breadcrumb-item a, .body-Text.background-green .child-item-blog .sub-title, footer .copyright a, footer #Twitter-widget ul li .user [data-scribe="element:user_link"], footer #Twitter-widget ul li .timePosted a {
   color: #28377d; }
 
 .color-red, .button, footer #Twitter-widget ul li .tweet a, footer #Twitter-widget ul li .interact a {
   color: #E30023; }
+
+.color-gray, .body-Text.background-green .child-item-blog .title, .body-Text.background-green .child-item-blog .author, .body-Text.background-green .child-item-blog .date, .body-Text.background-green .child-item-blog p {
+  color: #878787; }
 
 .panel {
   border-style: solid;
@@ -230,6 +236,9 @@ COMMON PADDING AND MARGING CSS CLASSES
 
 .padding-0 {
   padding: 0; }
+
+.padding-top-0 {
+  padding-top: 0 !important; }
 
 .padding-bottom-0 {
   padding-bottom: 0; }
@@ -362,8 +371,7 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 input[type="color"],
-textarea,
-select {
+textarea {
   height: 3rem;
   border-radius: 3px;
   outline: none;
@@ -374,7 +382,8 @@ select {
   width: 100%;
   font-style: italic;
   font-size: 12px;
-  border: none; }
+  border: none;
+  padding: 0.375rem 0.75rem; }
 
 textarea {
   height: 6rem; }
@@ -393,8 +402,7 @@ input[type="tel"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 input[type="color"]:focus,
-textarea:focus,
-select:focus {
+textarea:focus {
   background: #F0F1F1;
   border-color: #66afe9;
   outline: 0;
@@ -415,9 +423,41 @@ input[type="tel"]:hover,
 input[type="time"]:hover,
 input[type="url"]:hover,
 input[type="color"]:hover,
-textarea:hover,
-select:hover {
+textarea:hover {
   background: #F0F1F1;
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+
+/*=================
+SELECTED FIELD ICON
+===============*/
+select {
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+  padding: 0.375rem 0.75rem;
+  height: 3rem;
+  border-radius: 3px;
+  outline: none;
+  resize: none;
+  box-shadow: none;
+  color: #414042;
+  width: 100%;
+  font-style: italic;
+  font-size: 12px;
+  border: none;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  background: url(../images/select.png) no-repeat right #fff;
+  position: relative; }
+
+select:hover,
+select:focus {
+  background: url(../images/selecthover.png) no-repeat right #fff;
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -426,6 +466,8 @@ select:hover {
 /*=================
 Header
 ===============*/
+header .container {
+  max-width: 70.5rem; }
 header .searchicon .fa {
   color: #a4a4a4;
   font-size: 24px;
@@ -568,10 +610,109 @@ Section Banner inner white
     color: #000 !important; }
   .banner-inner-white figure {
     margin: 0px; }
+  .banner-inner-white .container {
+    max-width: 70.5rem; }
+
+/*=================
+publication page
+===============*/
+.background-green-border {
+  background: #e4f3f5;
+  position: relative;
+  margin-top: 4rem; }
+  .background-green-border::after {
+    background: url(../images/publication.png);
+    content: '';
+    display: block;
+    height: 84px;
+    position: absolute;
+    top: -4rem;
+    width: 100%;
+    background-repeat: no-repeat; }
+  .background-green-border .quick-links {
+    position: initial;
+    width: 100% !important; }
+
+.program-management {
+  background: #003276;
+  position: relative;
+  margin-top: 4rem; }
+  .program-management::after {
+    background: url(../images/program-management-texture.png); }
+
+.program-management .owl-carousel .owl-nav button.owl-next,
+.program-management .owl-carousel .owl-nav button.owl-prev {
+  background: #E30023;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0px;
+  margin: 2px;
+  color: #fff; }
+  .program-management .owl-carousel .owl-nav button.owl-next:hover, .program-management .owl-carousel .owl-nav button.owl-next:focus,
+  .program-management .owl-carousel .owl-nav button.owl-prev:hover,
+  .program-management .owl-carousel .owl-nav button.owl-prev:focus {
+    color: #003276; }
+.program-management .owl-theme .owl-nav {
+  text-align: left; }
+.program-management .panel.child-item-blog {
+  background-color: #fff;
+  border-top: 4px solid #E30023 !important;
+  margin-bottom: 0px; }
+  .program-management .panel.child-item-blog:hover {
+    background-color: #E30023;
+    border-top: 4px solid #f69341 !important;
+    -webkit-transition: 0.8s ease-out;
+    transition: 0.8s ease-out; }
+    .program-management .panel.child-item-blog:hover .sub-title, .program-management .panel.child-item-blog:hover .title, .program-management .panel.child-item-blog:hover .author, .program-management .panel.child-item-blog:hover span, .program-management .panel.child-item-blog:hover p {
+      color: #fff; }
+.program-management .button {
+  font-size: 14px;
+  background: #e0e0e0 !important;
+  color: #002351;
+  border-color: #e0e0e0;
+  width: 100%;
+  padding: 0.75rem 1rem; }
+  .program-management .button::before {
+    border: solid 1px #E30023 !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    color: #fff;
+    background-color: #E30023;
+    -webkit-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+    position: absolute;
+    content: "";
+    z-index: -9; }
+  .program-management .button::after {
+    position: absolute;
+    content: ""; }
+  .program-management .button:hover, .program-management .button:focus {
+    border-color: #E30023 !important;
+    color: #fff !important; }
+    .program-management .button:hover::before, .program-management .button:focus::before {
+      width: 100%; }
+.program-management .sub-title {
+  margin-bottom: 30px !important;
+  margin-top: 30px !important; }
 
 /*=================
 Section Banner inner
 ===============*/
+.zoom {
+  animation: scale 40s linear infinite; }
+
+@keyframes scale {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+.border-radius {
+  border-radius: 70% 70% 0px 0px; }
+
 .banner-inner.container.full-width {
   max-width: 100%;
   padding-left: 0px;
@@ -584,16 +725,32 @@ Section Banner inner
     animation: scale 40s linear infinite;
     width: 100%; }
 
-.zoom {
-  animation: scale 40s linear infinite; }
+/*=================
+filter widget
+===============*/
+.body-Text.background-green .filter-widget {
+  background-color: #fff;
+  border-top: 4px solid #003276;
+  right: 0px;
+  width: 100%;
+  margin-bottom: 0px; }
+  .body-Text.background-green .filter-widget label {
+    clear: both;
+    display: block;
+    margin: 0px 0px 20px 0px;
+    color: #3C3C3C; }
+  .body-Text.background-green .filter-widget h1 {
+    color: #141414;
+    font-size: 16px;
+    margin: 0px 0px 20px 0px; }
+  .body-Text.background-green .filter-widget input[type="checkbox"] {
+    margin-right: 10px; }
+.body-Text.background-green a.reset-filter {
+  margin-top: 10px;
+  color: #3C3C3C;
+  font-size: 22px;
+  text-decoration: underline; }
 
-@keyframes scale {
-  50% {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2); } }
 /*=================
 panel quick-links
 ===============*/
@@ -671,11 +828,41 @@ Section body-Text
           font-size: 24px; }
 
 /*=================
+Section pagineation
+===============*/
+.pagination li {
+  font-size: 14px; }
+.pagination .active .page-link {
+  background-color: #28377d;
+  border-color: #28377d; }
+.pagination .page-link {
+  color: #28377d; }
+
+/*=================
+Section search-widget
+===============*/
+.search-widget input {
+  background: #FFF;
+  border: none;
+  color: #878787; }
+.search-widget button {
+  padding: 0.375rem 0.75rem;
+  background: #e0e0e0;
+  border: none;
+  color: #414042; }
+
+/*=================
 Section body-Text
 ===============*/
 .body-Text.background-green {
   padding-top: 5rem;
   padding-bottom: 5rem; }
+  .body-Text.background-green .pagination.center {
+    margin: 0 auto; }
+    .body-Text.background-green .pagination.center li {
+      font-size: 14px; }
+  .body-Text.background-green .container {
+    max-width: 70.5rem; }
   .body-Text.background-green span.play {
     top: 43%;
     bottom: 50%;
@@ -710,12 +897,52 @@ Section body-Text
   .body-Text.background-green p {
     color: #141414;
     font-size: 22px; }
+  .body-Text.background-green .color-gray, .body-Text.background-green .child-item-blog .title, .body-Text.background-green .child-item-blog .author, .body-Text.background-green .child-item-blog .date, .body-Text.background-green .child-item-blog p {
+    color: #707070 !important; }
   .body-Text.background-green ul {
     margin-left: 4rem; }
     .body-Text.background-green ul li {
       margin-bottom: 1rem;
       color: #141414;
       font-size: 22px; }
+  .body-Text.background-green .child-item-blog {
+    background: #fff;
+    border: none; }
+    .body-Text.background-green .child-item-blog:hover {
+      -webkit-transition: 0.8s ease-out;
+      transition: 0.8s ease-out; }
+      .body-Text.background-green .child-item-blog:hover .button {
+        border-color: #28377d;
+        background: #fff;
+        color: #28377d; }
+    .body-Text.background-green .child-item-blog .button {
+      font-size: 14px;
+      background: #28377d;
+      color: #fff;
+      border-color: #fff;
+      padding: 0.5rem 1rem; }
+      .body-Text.background-green .child-item-blog .button::before {
+        border: solid 1px #fff; }
+    .body-Text.background-green .child-item-blog .sub-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+      margin-top: 0px; }
+    .body-Text.background-green .child-item-blog .title {
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: 0px; }
+    .body-Text.background-green .child-item-blog .author {
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: 0px; }
+      .body-Text.background-green .child-item-blog .author span {
+        font-style: italic; }
+    .body-Text.background-green .child-item-blog .date {
+      font-size: 14px; }
+    .body-Text.background-green .child-item-blog p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: 0px; }
 
 /*=================
 Section Banner
@@ -1017,6 +1244,11 @@ footer {
     font-size: 25px; }
     footer .social-media li a .fa:hover {
       -webkit-animation-name: bounceInUp;
-      animation-name: bounceInUp; }
+      animation-name: bounceInUp;
+      -webkit-transition: 0.6s ease-out;
+      transition: 0.6s ease-out;
+      -webkit-transform: rotateZ(720deg);
+      -moz-transform: rotateZ(720deg);
+      transform: rotateZ(720deg); }
 
 /*# sourceMappingURL=app.css.map */
