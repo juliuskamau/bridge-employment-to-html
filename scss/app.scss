@@ -841,6 +841,9 @@ publication page
 
 
 .program-management{
+     .main-title{
+    font-size: 14px !important;
+ }
 .owl-carousel .owl-nav button.owl-next, 
 .owl-carousel .owl-nav button.owl-prev{
 
@@ -863,6 +866,7 @@ text-align: left;
     background-color: #fff;
     border-top: 4px solid #E30023 !important;
     margin-bottom: 0px;
+    min-height: 200px;
     &:hover{
         background-color: #E30023;
           border-top: 4px solid #f69341 !important;
@@ -914,13 +918,133 @@ border-color:#E30023 !important;
           }
       }
 .sub-title{
-        margin-bottom: 30px !important;;
-        margin-top: 30px !important;;
+        margin-bottom: 30px !important;
+        margin-top: 30px !important;
 }
 
 }
 
 
+
+.sites{
+     background: transparent;
+    &::after{
+        top: -2rem;
+        z-index: -9;
+    }
+    
+.sites-panel{
+background: #e4f3f5;
+}
+
+}
+
+.body-Text.background-green.background-green-border.padding-top-0.sites.margin-0{
+ background: #e4f3f5;
+}
+.body-Text.background-green {
+       .panel.child-item-blog{
+    min-height: 270px;
+}
+.wrapper-englewood{
+    h1.main-title{
+  @extend .Oscine-Bold; 
+    font-size: 20px;
+    border-bottom: #0095A8 solid 4px;
+    padding-bottom: 12PX;
+    }
+    .date{
+       @extend .Oscine-Bold;  
+       width: 50px;
+    }
+    .webinar-title{
+        color: #28377d;
+        @extend .Oscine-Bold; 
+    }
+    .time-panel{
+        p{
+                font-size: 15px;
+             @extend .Oscine-Bold; 
+        } 
+    }
+    .container{
+    max-width: 60.5rem;
+    }
+
+
+.program-management{
+        background: transparent;
+        margin: 0px;
+        padding: 0px;
+        &::after{
+            display: none;
+        }
+
+
+}
+
+    .Oscine-Bold.uppercase.color-blue.main-title{
+border-bottom: none;
+    padding: 0px;
+    font-size: 18px;
+
+    }
+
+
+}
+}
+/*=================
+Section englewood panel
+===============*/
+.background-green{
+.englewoodpanel .panel-childitem-map {
+h1{
+        color: #b2c1d5 !important;
+    font-size: 18px;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+}
+}
+    .englewoodpanel .panel-childitem-map{
+    a,p,strong{
+             color: #fff;
+    font-size: 18px; 
+     @extend .Oscine-Regular; 
+    }
+        }
+}
+.englewoodpanel{
+    @extend .background-blue; 
+    padding-top: 3rem;
+     padding-bottom: 3rem;
+     position: relative;
+    .panel-childitem-map{
+        border: none;
+        border-top: #0095A8 solid 4px ;
+        background:transparent;
+        h1{
+            color: #b2c1d5;
+            font-size: 14px;
+              text-transform: uppercase;
+                  margin-bottom: 1rem;
+        }
+        a,p,strong{
+             color: #fff;
+    font-size: 18px; 
+     @extend .Oscine-Regular; 
+        }
+    }
+    &::before{
+    background: url(../images/englewooddown.png);
+    content: '';
+    display: block;
+    height: 84px;
+    position: absolute;
+    bottom: -84px;
+    width: 100%;
+    background-repeat: no-repeat;
+    }
+}
 
 
 
@@ -1194,7 +1318,7 @@ h1{
 p{
  @extend .Oscine-Regular; 
  color: #141414;
-font-size: 22px;
+font-size: 18px;
 }
 .color-gray{
     color: #707070 !important;
@@ -1205,7 +1329,7 @@ ul{
         margin-bottom: 1rem;
  @extend .Oscine-Regular; 
  color: #141414;
-     font-size: 22px;
+     font-size: 18px;
     }
 }
 .child-item-blog{
@@ -1218,6 +1342,9 @@ ul{
           .sub-title,.title,.author,span,p{
           @extend .color-white; 
           }
+              .location{
+       color: #fff;
+    }
           .button{
  border-color:#28377d;
   background: #fff;
@@ -1264,6 +1391,10 @@ ul{
  @extend .Oscine-Bold; 
  @extend .color-gray; 
  font-size: 14px;
+    }
+    .location{
+       color: #28377d !important;
+        @extend .Oscine-Bold; 
     }
     p{
       font-size: 14px;
