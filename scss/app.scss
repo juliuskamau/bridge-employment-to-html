@@ -875,7 +875,12 @@ text-align: left;
           .sub-title,.title,.author,span,p{
          color: #fff;
           }
-
+        .sub-title{
+       animation:fadeInDown 0.8s linear;
+          }
+   p{
+    animation:fadeInUp 0.8s linear;
+   }
       }
 
       
@@ -939,9 +944,7 @@ background: #e4f3f5;
 
 }
 
-.body-Text.background-green.background-green-border.padding-top-0.sites.margin-0{
- background: #e4f3f5;
-}
+
 .body-Text.background-green {
        .panel.child-item-blog{
     min-height: 270px;
@@ -1342,6 +1345,12 @@ ul{
           .sub-title,.title,.author,span,p{
           @extend .color-white; 
           }
+                  .sub-title{
+       animation:fadeInDown 0.8s linear;
+          }
+   p{
+    animation:fadeInUp 0.8s linear;
+   }
               .location{
        color: #fff;
     }
@@ -1816,13 +1825,209 @@ arallax css
 }
 
 
+.body-Text.background-green.background-green-border.padding-top-0.sites.margin-0{
+margin-bottom: 0px;
+    padding-bottom: 0px;
+}
 
 
 
 
+/*=================
+section impact program-management
+===============*/
+.impact.program-management{
+ background: #e4f3f5;
+  margin: 0px;
+   padding-bottom: 20px;
+.fa{
+    @extend .color-red;  
+}
+.container{
+        max-width: 60.5rem;
+        h1{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+}
+.child-item-blog{
+      background: #fff;
+      border:none;
+      min-height: 280px;
+    &:hover{
+         @extend .background-blue; 
+         -webkit-transition: 0.8s ease-out;
+          transition: 0.8s ease-out;
+          .sub-title,.title,.author,span,p{
+          @extend .color-white; 
+          }
+                  .sub-title{
+       animation:fadeInDown 0.8s linear;
+          }
+   p{
+    animation:fadeInUp 0.8s linear;
+   }
+              .location{
+       color: #fff;
+    }
+          .button{
+ border-color:#28377d;
+  background: #fff;
+  color: #28377d;
+      
+          }
+      }
+      .button{
+    font-size: 14px;
+    background: #28377d;
+     color: #fff;
+    border-color:#fff;
+    padding: 0.5rem 1rem;
+              &::before{
+                border: solid 1px #fff;
+          }
+      }
+    .sub-title{
+ @extend .Oscine-Bold; 
+ @extend .color-blue; 
+ font-size: 18px;
+ margin-bottom: 10px;
+ margin-top: 0px;
+    }
+    .title{
+ @extend .Oscine-Bold; 
+ @extend .color-gray; 
+ font-size: 14px;
+ margin-bottom: 10px;
+ margin-top: 0px;
+    }
+    .author{
+ @extend .Oscine-Regular; 
+ @extend .color-gray; 
+ font-size: 14px;
+ margin-bottom: 10px;
+ margin-top: 0px;
+ span{
+   @extend .Oscine-Bold; 
+   font-style: italic;
+ }
+    }
+    .date{
+ @extend .Oscine-Bold; 
+ @extend .color-gray; 
+ font-size: 14px;
+    }
+    .location{
+       color: #28377d !important;
+        @extend .Oscine-Bold; 
+    }
+    p{
+      font-size: 14px;
+      @extend .color-gray; 
+     margin-bottom: 10px;
+ margin-top: 0px;
+    }
+}
+
+
+}
+.impact_01.program-management{
+    background-color: #fff;
+.child-item-blog{
+    background:#28377d;
+     .sub-title,.title,.author,span,p{
+          @extend .color-white; 
+          }
+           .sub-title{
+     @extend .FreightText-Pro-Medium;
+     font-size: 75px;
+ }
+
+    &:hover{
+          .sub-title{
+          color: #f69341 !important; 
+       animation:fadeInRight 0.8s linear;
+          }
+   p{
+    animation:fadeInLeft 0.8s linear;
+   }
+  
+      }
 
 
 
+}
+
+}
+
+.impact_02.program-management{
+    background-color: #fff;
+.child-item-blog{
+    background: #e4f3f5;
+     .sub-title,.title,.author,span,p{
+          @extend .color-blue; 
+          }
+          p{
+                color: #28377d;
+          }
+           .sub-title{
+     @extend .FreightText-Pro-Medium;
+     font-size: 75px;
+ }
+
+    &:hover{
+          .sub-title{
+          color: #f69341 !important; 
+       animation:fadeInRight 0.8s linear;
+          }
+   p{
+    animation:fadeInLeft 0.8s linear;
+   }
+  
+      }
+
+
+
+}
+
+}
+
+.impact.program-management.impact_03{
+    background: #003276 !important;
+}
+.impact.program-management.impact_03.our_stories{
+    background: transparent !important;
+    margin-top: 10rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+         .owl-carousel .owl-nav button.owl-next,
+          .owl-carousel .owl-nav button.owl-prev {
+             background: #003276; 
+         }
+        .child-item-blog{
+            &:hover{
+                 background: #003276 !important; 
+                               img{
+                     animation:zoomIn  0.8s linear;
+   }
+            }
+        }
+.container{
+        max-width: 70.5rem;
+}
+.jarallax{
+    min-height: 450px;
+}
+.absolute{
+    position: absolute;
+    top: -10rem;
+    left: 0px;
+    right: 0px;
+    background: url(../images/our_stories02.png);
+    background-repeat: no-repeat;
+}
+
+}
 /*=================
 Footer
 ===============*/  
