@@ -62,7 +62,7 @@
                   </div>
                 </div>
                 <div class="col-md-2">
-                  <a href="#" class="uppercase left">
+                  <a href="#" class="uppercase">
                     <i class="fa fa-user-o margin-right-10" aria-hidden="true"></i>
                     Logout
                   </a>
@@ -96,19 +96,19 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <li>
-                        <a class="dropdown-item" href="parts.html">Goals,
+                        <a class="dropdown-item" href="">Goals,
                           History & Leadership</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="lubricants.html">Our
+                        <a class="dropdown-item" href="">Our
                           Model</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="tyres.html">BTE News
+                        <a class="dropdown-item" href="">BTE News
                           (Blog)</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="winparts.html">Contact</a>
+                        <a class="dropdown-item" href="">Contact</a>
                       </li>
                     </ul>
                   </li>
@@ -124,7 +124,7 @@
                           30 Years</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="">Youth
+                        <a class="dropdown-item" href="youth-leadership-council.html">Youth
                           Leadership Council</a>
                       </li>
                       <li>
@@ -170,7 +170,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <li>
-                        <a class="dropdown-item" href="">Young
+                        <a class="dropdown-item" href="youth-leadership-council.html">Young
                           Professionals Network</a>
                       </li>
                       <li>
@@ -198,7 +198,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="searchicon hvr-icon-spin">
+              <div class="searchicon hvr-icon-spin" data-bs-toggle="modal" data-bs-target="#search-pop-up">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </div>
             </div>
@@ -359,7 +359,7 @@
                 BTE 30 Years Oral History: <br />
                 30 Years, 30 Voices
               </h2>
-              <a href="#" class="button uppercase left" data-aos="fade-up" data-aos-duration="1000">LEARN MORE</a>
+              <a href="publications.html" class="button uppercase left" data-aos="fade-up" data-aos-duration="1000">LEARN MORE</a>
             </div>
           </div>
         </div>
@@ -377,7 +377,7 @@
           </h1>
         </div>
         <div class="col-md-6">
-          <a href="#" class="button uppercase right"data-aos="fade-up" data-aos-duration="1000">see all strory</a>
+          <a href="our-stories.html" class="button uppercase right"data-aos="fade-up" data-aos-duration="1000">see all strory</a>
         </div>
       </div>
       <div class="row">
@@ -394,7 +394,7 @@
             “Even if it was just talking about our day, it felt good to share
             with someone [BTE mentor] who also shared back.”
           </p>
-          <a href="#" class="button uppercase left" data-aos="fade-up" data-aos-duration="1000">READ STORY</a>
+          <a href="Individual-story.html" class="button uppercase left" data-aos="fade-up" data-aos-duration="1000">READ STORY</a>
         </div>
         <div class="col-md-6">
           <div class="inside-pic hover14 column" data-aos="fade-up" data-aos-duration="1000">
@@ -409,7 +409,7 @@
             “Even if it was just talking about our day, it felt good to share
             with someone [BTE mentor] who also shared back.”
           </p>
-          <a href="#" class="button uppercase left" data-aos="fade-up" data-aos-duration="1000">READ STORY</a>
+          <a href="Individual-story.html" class="button uppercase left" data-aos="fade-up" data-aos-duration="1000">READ STORY</a>
         </div>
       </div>
     </div>
@@ -517,7 +517,28 @@
       </div>
     </div>
   </footer>
+<!-- Modal -->
+<div class="modal fade video-modal search-pop-up" id="search-pop-up" tabindex="-1" aria-labelledby="search-pop-upLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+ <div class="modal-body">
+           <h5 class="color-white">Search</h5>
+           <form class="d-flex">
 
+        <input class="form-control" type="search" placeholder="Start typing here..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">
+<i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+        </div>
+    </div>
+  </div>
+</div>
   <script src="js/jquery.3.6.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/owl.carousel.js"></script>

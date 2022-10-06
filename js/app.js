@@ -83,6 +83,26 @@ AOS.init({
           }); 
 
      })
+
+
+            jQuery(document).ready(function($) {
+    
+               var allPanels = $('.accordioncontent').hide();
+                  
+                $('.accordionheader,.closebutton').click(function() {
+
+                    $('.accordionheader.active').removeClass('active');
+                    $(this).addClass('active')
+
+                  allPanels.slideUp();
+                  $(this).parent().next().slideDown();
+                  return false;
+                });
+              
+              })
+
+
+
     
 //$('[data-scribe="element:user_link"]').addClass("col-md-6");
 //$('[data-scribe="element:user_link"]').addClass("col-md-6");
