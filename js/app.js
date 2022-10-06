@@ -101,7 +101,9 @@ AOS.init({
               
               })
 
-
+    jQuery(document).ready(function($) {
+   
+  })
 
     
 //$('[data-scribe="element:user_link"]').addClass("col-md-6");

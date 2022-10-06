@@ -833,10 +833,12 @@ Section Banner effect
   margin-left: -130px;
   z-index: 5;
   pointer-events: none;*/
-  position: absolute;
-  z-index: 9999;
-  bottom: 0px;
-  pointer-events: none;
+    position: absolute;
+    z-index: 99;
+    bottom: 0px;
+    pointer-events: none;
+    height: 100%;
+    right: 0px;
 }
 @keyframes dash {
   0% {
@@ -859,7 +861,8 @@ Section Banner inner white
   position: relative;
   .page-title-inner {
     color: #000 !important;
-    font-size: 28px;
+    //font-size: 28px;
+    font-size: 50px;
   }
   figure {
     margin: 0px;
@@ -1475,6 +1478,21 @@ section.banner {
   background-position: center center;
   background-repeat: repeat-x;
   padding-top: 2rem;
+  position: relative;
+  .table{
+        height: 400px;
+  }
+  &::before{
+     background: url(../images/texturecurved.png);
+    content: "";
+    display: block;
+    height: 282px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    background-repeat: repeat;
+  }
   .owl-dots {
     position: absolute;
     bottom: 17%;
@@ -1522,9 +1540,10 @@ section.what-we-do {
   /*background: url(../images/texture.png);
 background-repeat: round;*/
   padding-top: 5rem;
+   padding-bottom: 5rem;
   background: #003276;
   position: relative;
-
+/*
   &::before {
     background: url(../images/texturehome.png);
     /* content: '';
@@ -1532,7 +1551,8 @@ background-repeat: round;*/
     height: 100%;
     position: absolute;
     width: 100%;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
+    ===========
     content: "";
     display: block;
     height: 316px;
@@ -1540,12 +1560,13 @@ background-repeat: round;*/
     position: absolute;
     width: 100%;
     background-repeat: round;
-  }
+  }*/
   .table {
-    padding-top: 5rem;
+    //padding-top: 5rem;
+        height: auto;
     .table-cell {
-      padding-top: 10rem;
-      padding-bottom: 10rem;
+         padding-top: 0rem;
+    padding-bottom: 0rem;
       h1 {
         font-size: 29px;
       }
@@ -1570,7 +1591,24 @@ Section news
 
 .news {
   padding-top: 4rem;
+  position: relative;
+  .table{
+    height: auto;
+  }
+&::before{
 
+     background: url(../images/news-child.png);
+    content: "";
+    display: block;
+    height: 156px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    z-index: -9;
+    background-repeat: repeat;
+
+
+}
   .jarallax {
     min-height: 480px;
   }
@@ -1598,6 +1636,7 @@ section.news-child-item {
   background-position: center left;
   background-repeat: repeat-x;
   position: relative;
+  /*
   &::before {
     background: url(../images/news-child.png);
     content: "";
@@ -1606,13 +1645,14 @@ section.news-child-item {
     position: absolute;
     width: 100%;
     background-repeat: no-repeat;
-    /*content: '';
+    ========
+    content: '';
     display: block;
     height: 212px;
     top: 0px;
     position: absolute;
-    width: 100%;*/
-  }
+    width: 100%;
+  }*/
   &::after {
     background: url(../images/news-child-bottom.png);
     content: "";
@@ -1632,7 +1672,7 @@ section.news-child-item {
     @extend .Oscine-Regular;
   }
   .news-item {
-    padding-top: 10rem;
+     padding-top: 5rem;
   }
   a.button {
     background: #e30023;
