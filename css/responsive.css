@@ -23,9 +23,9 @@
 }
 
 .navbar-nav{
-    background-color:#000;
+    background-color:#28377d;
     height:100%;
-     width:85%;
+     width:100%;
 }
 .sticki .navbar-nav{
     background-color:transparent;
@@ -123,6 +123,67 @@ header  .navbar-toggler span:nth-child(3) {transform: translate(0%, 0%) rotate(0
 
 /*Small devices (landscape phones, less than 768px)===========================*/
 @media (max-width: 767.98px) {
+   .navbar-nav .dropdown-item{
+border-radius: 0rem;
+    background: #e30023;
+    color: #fff;
+    }
+    .navbar-nav .dropdown-menu{
+ background: transparent;
+    }
+    .background-green-border::after{
+        background-position: center;
+    }
+    .body-Text.background-green {
+    padding-top: 1rem;
+}
+    .inside-pic.hover14 img{
+    width: 100%;
+}
+select {
+   margin-bottom: 2rem;
+}
+.col-md-3 .inside-pic.hover14 {
+  overflow: hidden;
+    height: 340px;
+    margin-bottom: 2rem;
+}
+    
+.panel.quick-links{
+position: initial;
+    width: 100%;
+    margin-top: 2rem;
+}
+    .navbar-nav li.nav-item .nav-link{
+color: #fff;
+    }
+     .navbar-nav  .nav-item {
+    border-bottom: solid 1px #fff;
+}
+    footer {
+    padding-top: 2rem;
+
+
+}
+header .mobi-panel{
+padding: 0px;
+}
+footer .copyright li a{
+    font-size: 11px;
+}
+footer .copyright ul{
+   text-align: center;
+   margin: 0 auto;
+}
+footer .logo img{
+        margin: 0 auto;
+    display: block;
+}
+footer .mobi-connect{
+    padding: 2rem;
+    background: #e4f3f5;
+}
+
     section.banner .table {
     display: table;
     width: 100%;
@@ -141,7 +202,58 @@ section.banner .table .table-cell .button {
 }
     header .logo img{
 width: 120px;
+padding-left: 0px;
     }
+    header {
+    -webkit-box-shadow: 0 3px 8px 0px #ddd;
+    box-shadow: 0 3px 8px 0px #ddd;
+    padding: 0.3rem;
+    }
+    section.what-we-do .table .table-cell {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+section.what-we-do .table .table-cell p {
+    width: 100%;
+   
+}
+
+.news .table .table-cell h2 {
+    width: 100%;
+}
+
+    section.news .table {
+    height: auto;
+}
+ section.news{
+ padding-top: 2rem;
+ }
+   section.student .inside-pic,
+   section.student .col-md-6:last-child .inside-pic{
+    height: auto;
+   }
+section.student .inside-pic{
+    margin-bottom: 2rem;
+}
+section.student figure{
+   margin: 0px; 
+}
+
+section.get-in-touch::after{
+    display: none;
+}
+
+footer .right{
+float: none;
+}
+
+.bg {
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 100%;
+}
+
     header .navbar{
 padding: 0px;
 background-color: #fff;

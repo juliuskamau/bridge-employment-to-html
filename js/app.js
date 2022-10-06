@@ -106,3 +106,6 @@ AOS.init({
     
 //$('[data-scribe="element:user_link"]').addClass("col-md-6");
 //$('[data-scribe="element:user_link"]').addClass("col-md-6");
+
+
+//$('#Twitter-widget').addClass("owl-carousel owl-theme");
