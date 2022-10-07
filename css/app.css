@@ -194,7 +194,7 @@ a {
   background: #003276; }
 
 .background-red, .modal.fade.video-modal.search-pop-up .btn, footer .social-media li a .fa:hover {
-  background: #e85a50; }
+  background: #E30023; }
 
 .color-white, .page-title-inner, .modal.fade.video-modal.search-pop-up .btn, .body-Text.background-green .child-item-blog:hover .sub-title,
 .body-Text.background-green .child-item-blog:hover .title,
@@ -222,7 +222,7 @@ a {
   color: #28377d; }
 
 .color-red, .button, .impact.program-management .fa, footer #Twitter-widget ul li .tweet a, footer #Twitter-widget ul li .interact a {
-  color: #e30023; }
+  color: #E30023; }
 
 .color-gray, .body-Text.background-green .child-item-blog .title, .body-Text.background-green .child-item-blog .author, .body-Text.background-green .child-item-blog .date, .body-Text.background-green .child-item-blog p, .impact.program-management .child-item-blog .title, .impact.program-management .child-item-blog .author, .impact.program-management .child-item-blog .date, .impact.program-management .child-item-blog p {
   color: #878787; }
@@ -520,8 +520,8 @@ header {
       color: #FFF;
       font-size: 13px; }
       header .dropdown-menu .dropdown-item:focus, header .dropdown-menu .dropdown-item:hover {
-        color: #1e2125;
-        background-color: #e30023; }
+        color: #fff;
+        background-color: #E30023; }
   header .background-blue.padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm, header .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.englewoodpanel, header .body-Text.background-green .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.child-item-blog:hover, .body-Text.background-green header .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.child-item-blog:hover, header .impact.program-management .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.child-item-blog:hover, .impact.program-management header .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.child-item-blog:hover, header footer .social-media li a .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.fa, footer .social-media li a header .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.fa {
     position: relative; }
     header .background-blue.padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm::before, header .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.englewoodpanel::before, header .body-Text.background-green .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.child-item-blog:hover::before, .body-Text.background-green header .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.child-item-blog:hover::before, header .impact.program-management .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.child-item-blog:hover::before, .impact.program-management header .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.child-item-blog:hover::before, header footer .social-media li a .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.fa::before, footer .social-media li a header .padding-left-15.padding-right-15.padding-bottom-10.padding-top-10.hidden-sm.fa::before {
@@ -594,14 +594,14 @@ header {
   position: relative;
   padding: 0.75rem 2rem;
   font-size: 18px;
-  border: solid 1px #e30023; }
+  border: solid 1px #E30023; }
   .button .fa {
     margin-left: 1rem; }
 
 .button:before {
   content: "";
   position: absolute;
-  border: solid 1px #e30023;
+  border: solid 1px #E30023;
   top: -14px;
   right: -14px;
   bottom: -14px;
@@ -632,7 +632,8 @@ Section Breadcrump and page title
   text-transform: uppercase; }
 .breadcrumb.blue .breadcrumb-item.active {
   font-size: 16px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 28px; }
 
 /*==========================
 Section Banner effect
@@ -731,7 +732,7 @@ publication page
   font-size: 14px !important; }
 .program-management .owl-carousel .owl-nav button.owl-next,
 .program-management .owl-carousel .owl-nav button.owl-prev {
-  background: #e30023;
+  background: #E30023;
   padding: 0.5rem 1rem !important;
   border-radius: 0px;
   margin: 2px;
@@ -744,11 +745,11 @@ publication page
   text-align: left; }
 .program-management .panel.child-item-blog {
   background-color: #fff;
-  border-top: 4px solid #e30023 !important;
+  border-top: 4px solid #E30023 !important;
   margin-bottom: 0px;
   min-height: 200px; }
   .program-management .panel.child-item-blog:hover {
-    background-color: #e30023;
+    background-color: #E30023;
     border-top: 4px solid #f69341 !important;
     -webkit-transition: 0.8s ease-out;
     transition: 0.8s ease-out; }
@@ -770,14 +771,14 @@ publication page
   width: 100%;
   padding: 0.75rem 1rem; }
   .program-management .button::before {
-    border: solid 1px #e30023 !important;
+    border: solid 1px #E30023 !important;
     top: 0;
     bottom: 0;
     left: 0;
     height: 100%;
     width: 0%;
     color: #fff;
-    background-color: #e30023;
+    background-color: #E30023;
     -webkit-transition: 0.6s ease-out;
     transition: 0.6s ease-out;
     position: absolute;
@@ -787,7 +788,7 @@ publication page
     position: absolute;
     content: ""; }
   .program-management .button:hover, .program-management .button:focus {
-    border-color: #e30023 !important;
+    border-color: #E30023 !important;
     color: #fff !important; }
     .program-management .button:hover::before, .program-management .button:focus::before {
       width: 100%; }
@@ -1506,19 +1507,19 @@ section.banner {
     background: url(../images/texturecurved.png);
     content: "";
     display: block;
-    height: 282px;
-    bottom: 0px;
+    height: 320px;
+    bottom: -3px;
     position: absolute;
     width: 100%;
     z-index: 99;
-    background-repeat: repeat; }
+    background-repeat: round; }
   section.banner .owl-dots {
     position: absolute;
     bottom: 17%; }
   section.banner .owl-theme .owl-dots .owl-dot span {
     width: 20px;
     height: 20px;
-    background: #e30023; }
+    background: #E30023; }
   section.banner .owl-theme .owl-dots .owl-dot.active span,
   section.banner .owl-theme .owl-dots .owl-dot:hover span {
     background: #003276; }
@@ -1568,7 +1569,7 @@ background-repeat: round;*/
         width: 60%;
         line-height: 33px; }
       section.what-we-do .table .table-cell .button {
-        background: #e30023;
+        background: #E30023;
         font-weight: 700px; }
 
 /*=================
@@ -1588,7 +1589,7 @@ Section news
     position: absolute;
     width: 100%;
     z-index: -9;
-    background-repeat: repeat; }
+    background-repeat: round; }
   .news .jarallax {
     min-height: 480px; }
   .news .table .table-cell {
@@ -1630,7 +1631,7 @@ section.news-child-item {
     content: "";
     display: block;
     height: 130px;
-    bottom: 0px;
+    bottom: -3px;
     position: absolute;
     width: 100%; }
   section.news-child-item h1 {
@@ -1642,7 +1643,7 @@ section.news-child-item {
   section.news-child-item .news-item {
     padding-top: 5rem; }
   section.news-child-item a.button {
-    background: #e30023;
+    background: #E30023;
     color: #fff;
     margin-top: 5rem;
     font-size: 18px; }
@@ -1662,7 +1663,7 @@ section.news-child-item {
     section.news-child-item .publication .table .table-cell h1 {
       font-size: 18px; }
     section.news-child-item .publication .table .table-cell a.button {
-      background: #e30023;
+      background: #E30023;
       color: #fff;
       margin-top: 1rem;
       font-size: 18px; }
@@ -1678,7 +1679,7 @@ section.student {
     section.student .panel-intro h1 {
       font-size: 29px; }
     section.student .panel-intro a.button {
-      background: #e30023;
+      background: #E30023;
       color: #fff;
       margin-top: 1rem;
       font-size: 18px; }
@@ -1722,7 +1723,7 @@ section.get-in-touch {
     content: "";
     display: block;
     height: 212px;
-    bottom: 0px;
+    bottom: -3px;
     position: absolute;
     width: 100%; }
   section.get-in-touch .publication .pdf-panel {
@@ -1741,13 +1742,13 @@ section.get-in-touch {
     section.get-in-touch .publication .table .table-cell h1 {
       font-size: 28px; }
     section.get-in-touch .publication .table .table-cell a.button {
-      background: #e30023;
+      background: #E30023;
       color: #fff;
       margin-top: 1rem;
       font-size: 18px; }
     section.get-in-touch .publication .table .table-cell .row .col-md-6:last-child a.button {
       background: #fff;
-      color: #e30023;
+      color: #E30023;
       margin-top: 1rem;
       font-size: 18px; }
 

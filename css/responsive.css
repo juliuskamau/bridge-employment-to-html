@@ -123,6 +123,10 @@ header  .navbar-toggler span:nth-child(3) {transform: translate(0%, 0%) rotate(0
 
 /*Small devices (landscape phones, less than 768px)===========================*/
 @media (max-width: 767.98px) {
+
+    section.news-child-item .publication .table{
+min-height: auto;
+    }
    .navbar-nav .dropdown-item{
 border-radius: 0rem;
     background: #e30023;
@@ -187,7 +191,8 @@ footer .mobi-connect{
     section.banner .table {
     display: table;
     width: 100%;
-    height: 350px;
+    height: auto;
+    padding-top: 3rem;
     }
     section.banner{
 background-position: inherit;
@@ -199,6 +204,13 @@ padding: 0px;
 section.banner .table .table-cell .button {
     float: none;
     margin-top: 20px;
+}
+section.banner::before,
+.news::before{
+    
+    background-repeat: initial;
+       ;
+    
 }
     header .logo img{
 width: 120px;
@@ -240,7 +252,8 @@ section.student figure{
 }
 
 section.get-in-touch::after{
-    display: none;
+   background-repeat: initial;
+       background-position: center;
 }
 
 footer .right{
@@ -252,6 +265,7 @@ float: none;
     bottom: 0px;
     right: 0px;
     height: 100%;
+    display: none;
 }
 
     header .navbar{

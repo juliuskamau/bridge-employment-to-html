@@ -244,7 +244,7 @@ a {
 }
 
 .background-red {
-  background: #e85a50;
+  background: #E30023;
 }
 
 .color-white {
@@ -260,7 +260,7 @@ a {
   color: #28377d;
 }
 .color-red {
-  color: #e30023;
+  color: #E30023;
 }
 
 .color-gray {
@@ -618,8 +618,8 @@ header {
     color: #FFF;
     font-size: 13px;
         &:focus,&:hover{
-         color: #1e2125;
-    background-color: #e30023;
+         color: #fff;
+    background-color: #E30023;
     }
 }
 }
@@ -728,7 +728,7 @@ position: absolute;
   position: relative;
   padding: 0.75rem 2rem;
   font-size: 18px;
-  border: solid 1px #e30023;
+  border: solid 1px #E30023;
   @extend .color-red;
   @extend .Oscine-Regular;
   .fa {
@@ -738,7 +738,7 @@ position: absolute;
 .button:before {
   content: "";
   position: absolute;
-  border: solid 1px #e30023;
+  border: solid 1px #E30023;
   top: -14px;
   right: -14px;
   bottom: -14px;
@@ -789,6 +789,7 @@ Section Breadcrump and page title
     @extend .Oscine-Bold;
     font-size: 16px;
     text-transform: uppercase;
+    line-height: 28px;
   }
 }
 .page-title-inner {
@@ -909,7 +910,7 @@ publication page
   }
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-prev {
-    background: #e30023;
+    background: #E30023;
     padding: 0.5rem 1rem !important;
     border-radius: 0px;
     margin: 2px;
@@ -926,11 +927,11 @@ publication page
 
   .panel.child-item-blog {
     background-color: #fff;
-    border-top: 4px solid #e30023 !important;
+    border-top: 4px solid #E30023 !important;
     margin-bottom: 0px;
     min-height: 200px;
     &:hover {
-      background-color: #e30023;
+      background-color: #E30023;
       border-top: 4px solid #f69341 !important;
       -webkit-transition: 0.8s ease-out;
       transition: 0.8s ease-out;
@@ -958,14 +959,14 @@ publication page
     width: 100%;
     padding: 0.75rem 1rem;
     &::before {
-      border: solid 1px #e30023 !important;
+      border: solid 1px #E30023 !important;
       top: 0;
       bottom: 0;
       left: 0;
       height: 100%;
       width: 0%;
       color: #fff;
-      background-color: #e30023;
+      background-color: #E30023;
       -webkit-transition: 0.6s ease-out;
       transition: 0.6s ease-out;
       position: absolute;
@@ -978,7 +979,7 @@ publication page
     }
     &:hover,
     &:focus {
-      border-color: #e30023 !important;
+      border-color: #E30023 !important;
       color: #fff !important;
       &::before {
         width: 100%;
@@ -1486,12 +1487,13 @@ section.banner {
      background: url(../images/texturecurved.png);
     content: "";
     display: block;
-    height: 282px;
-    bottom: 0px;
+    height: 320px;
+    bottom: -3px;
     position: absolute;
     width: 100%;
     z-index: 99;
-    background-repeat: repeat;
+   // background-position: center;
+        background-repeat: round;
   }
   .owl-dots {
     position: absolute;
@@ -1500,7 +1502,7 @@ section.banner {
   .owl-theme .owl-dots .owl-dot span {
     width: 20px;
     height: 20px;
-    background: #e30023;
+    background: #E30023;
   }
 
   .owl-theme .owl-dots .owl-dot.active span,
@@ -1576,7 +1578,7 @@ background-repeat: round;*/
         line-height: 33px;
       }
       .button {
-        background: #e30023;
+        background: #E30023;
         @extend .color-white;
         @extend .Oscine-Bold;
         font-weight: 700px;
@@ -1605,7 +1607,7 @@ Section news
     position: absolute;
     width: 100%;
     z-index: -9;
-    background-repeat: repeat;
+  background-repeat: round;
 
 
 }
@@ -1658,7 +1660,7 @@ section.news-child-item {
     content: "";
     display: block;
     height: 130px;
-    bottom: 0px;
+    bottom: -3px;
     position: absolute;
     width: 100%;
   }
@@ -1675,7 +1677,7 @@ section.news-child-item {
      padding-top: 5rem;
   }
   a.button {
-    background: #e30023;
+    background: #E30023;
     color: #fff;
     margin-top: 5rem;
     font-size: 18px;
@@ -1704,7 +1706,7 @@ section.news-child-item {
           font-size: 18px;
         }
         a.button {
-          background: #e30023;
+          background: #E30023;
           color: #fff;
           margin-top: 1rem;
           font-size: 18px;
@@ -1728,7 +1730,7 @@ section.student {
       font-size: 29px;
     }
     a.button {
-      background: #e30023;
+      background: #E30023;
       color: #fff;
       margin-top: 1rem;
       font-size: 18px;
@@ -1792,7 +1794,7 @@ section.get-in-touch {
     content: "";
     display: block;
     height: 212px;
-    bottom: 0px;
+    bottom: -3px;
     position: absolute;
     width: 100%;
   }
@@ -1819,7 +1821,7 @@ section.get-in-touch {
           font-size: 28px;
         }
         a.button {
-          background: #e30023;
+          background: #E30023;
           color: #fff;
           margin-top: 1rem;
           font-size: 18px;
@@ -1830,7 +1832,7 @@ section.get-in-touch {
             &:last-child {
               a.button {
                 background: #fff;
-                color: #e30023;
+                color: #E30023;
                 margin-top: 1rem;
                 font-size: 18px;
                 @extend .Oscine-Bold;

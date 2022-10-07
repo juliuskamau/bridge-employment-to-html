@@ -74,6 +74,12 @@ AOS.init({
      jQuery(document).ready(function($) {
         $('.jarallax').jarallax({
           speed: 0.5,
+  disableParallax: function () {
+    return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+  },
+  disableVideo: function () {
+    return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+  }
          
         });  
 
@@ -81,6 +87,8 @@ AOS.init({
             keepImg: true,
             speed: 0.5,
           }); 
+
+           
 
      })
 
